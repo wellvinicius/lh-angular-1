@@ -9,7 +9,7 @@ import { VagasService } from '../vagas.service';
 })
 export class PainelVagasComponent implements OnInit {
 
-  public vaga: Vaga = new Vaga(0,"","","",0);
+  public vaga: Vaga = new Vaga(0,"","",0);
   public vagas: Vaga[] = [];
 
   constructor(private _vagasService: VagasService) { }
@@ -19,7 +19,7 @@ export class PainelVagasComponent implements OnInit {
 
   cadastrar(){
     this._vagasService.cadastrarVaga(this.vaga).subscribe(
-      vaga => {this.vaga = new Vaga(0,"","","",0)},
+      vaga => {this.vaga = new Vaga(0,"","",0)},
       err => {console.log("erro ao cadastrar")}
     );
 
@@ -29,7 +29,7 @@ export class PainelVagasComponent implements OnInit {
 
   atualizar(id: number){
     this._vagasService.atualizarVaga(id,this.vaga).subscribe(
-      vaga => {this.vaga = new Vaga(0,"","","",0)},
+      vaga => {this.vaga = new Vaga(0,"","",0)},
       err => {console.log("erro ao atualizar")}
     );
 
@@ -39,7 +39,7 @@ export class PainelVagasComponent implements OnInit {
 
   excluir(id: number){
     this._vagasService.removerVaga(id).subscribe(
-      vaga => {this.vaga = new Vaga(0,"","","",0)},
+      vaga => {this.vaga = new Vaga(0,"","",0)},
       err => {console.log("erro ao Excluir")}
     );
 
