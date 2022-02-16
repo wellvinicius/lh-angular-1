@@ -13,11 +13,19 @@ export class VagasService {
   constructor(private _httpClient: HttpClient) {  }
 
   getVagas(): Observable<Vaga[]>{
+<<<<<<< HEAD
     return this._httpClient.get<Vaga[]>(this.url + "/vagas");
   }
 
   cadastrarVaga(vaga: Vaga):Observable<Vaga[]>{
     return this._httpClient.post<Vaga[]>(this.url + "/cadastrar",vaga);
+=======
+    return this._httpClient.get<Vaga[]>(this.url+"/vagas");
+  }
+
+  cadastrarVaga(vaga: Vaga):Observable<Vaga[]>{
+    return this._httpClient.post<Vaga[]>(this.url+"/cadastrar",vaga);
+>>>>>>> 2652c1cfee656427716727c992bb3383e50d70c3
   }
 
   atualizarVaga(id:any ,vaga: Vaga):Observable<Vaga[]>{

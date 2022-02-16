@@ -2,7 +2,10 @@
 <form>
     <label>Id</label><input type="text" name="id" [(ngModel)] = "vaga.id" value="vaga.id"><br>
     <label>Nome</label><input type="text" name="nome" [(ngModel)] = "vaga.nome"><br>
+<<<<<<< HEAD
  
+=======
+>>>>>>> 2652c1cfee656427716727c992bb3383e50d70c3
     <label>Descrição</label><input type="text" name="descricao" [(ngModel)] = "vaga.descricao"><br>
     <label>Salário</label><input type="text" name="salario" [(ngModel)] = "vaga.salario"><br>
     <button type="button" (click)="cadastrar()">Cadastrar Vaga</button>
@@ -10,3 +13,24 @@
     <button type="button" (click)="excluir(vaga.id)">Excluir Vaga</button>
 </form>
    
+<<<<<<< HEAD
+=======
+
+<section class="lista-vagas">
+    <div *ngFor="let vaga of vagas">
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Código da Vaga: {{vaga.id}}</h5>
+              <h5 class="card-title">Vaga: {{vaga.nome}}</h5>
+              <p class="card-text">Descricão da Vaga: {{vaga.descricao}}</p>
+              <p class="card-text">Salário: R$ {{vaga.salario}},00</p>
+
+              <button type="button" (click)="atualizar(vaga.id)">Atualizar Vaga</button>
+                <button type="button" (click)="excluir(vaga.id)">Excluir Vaga</button>
+            </div>
+          </div>
+    
+    </div>
+</section>
+>>>>>>> 2652c1cfee656427716727c992bb3383e50d70c3
